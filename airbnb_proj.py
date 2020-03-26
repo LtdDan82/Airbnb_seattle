@@ -12,6 +12,7 @@ import calendar
 #import re
 import seaborn as sns
 import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 22})
 
 #from sklearn.preprocessing import StandardScaler
 #from sklearn.model_selection import train_test_split, GridSearchCV
@@ -90,7 +91,7 @@ def get_avg_price_per_month():
     monthly_mean.index = pd.CategoricalIndex(monthly_mean.index,
                                              categories=cats, ordered=True)
     monthly_mean = monthly_mean.sort_index()
-    plt.figure()
+    plt.figure(figsize=(1400/96, 787/96), dpi=96)
     ax = monthly_mean.plot.bar(title = 'Seattle Average AirBnB prices per month',
                                color = 'gray')
     ax.set_ylabel('Price in $')
@@ -151,7 +152,7 @@ def get_host_review_corr():
     df['host_about'] = df['host_about'].notna()
         
     # 2. Evaluate - Check the correlation
-    plt.figure()    
+    plt.figure(figsize=(1400/96, 1400/96), dpi=96)    
     sns.heatmap(df.corr(), annot = True, fmt = '.2f')
     plt.savefig('host_para_correlation.png')
 
@@ -169,14 +170,14 @@ def get_host_review_corr():
 
       
     # Plotting
-    plt.figure()    
+    plt.figure(figsize=(1400/96, 787/96), dpi=96)    
     title = 'Comparison of mean review scores for feature: ' + top_1
     ax1 = top1_means.plot.bar(title = title)
     ax1.set_ylim(bottom = 80, top = 100)
     ax1.set_ylabel('review_scores_rating')
     plt.savefig('rev_scores_superhost.png')
     
-    plt.figure()
+    plt.figure(figsize=(1400/96, 787/96), dpi=96)
     title = 'Comparison of mean review scores for feature: ' + top_2
     ax2 = top2_means.plot.bar(title = title)
     ax2.set_ylim(bottom = 80, top = 100)
@@ -238,7 +239,7 @@ def additional_parameters():
     col = 'neighbourhood_group_cleansed'
     best_neighborhoods = new_df.groupby(col)['review_scores_rating'].mean()
     
-    plt.figure()
+    plt.figure(figsize=(1400/96, 787/96), dpi=96)
     title = 'Best Neighbourhoods by Review Score Rating'
     ax_nbh = best_neighborhoods.plot.bar(title = title, color = 'blue')
     ax_nbh.set_ylabel('Review Score Rating')
@@ -252,7 +253,7 @@ def additional_parameters():
     count_amenities = new_df.groupby('amenities')['review_scores_rating'].count()
     
     # Evaluation / Visualization
-    plt.figure()
+    plt.figure(figsize=(1400/96, 787/96), dpi=96)
     ax_amen_count = count_amenities.plot.bar(color = 'black')
     ax_amen_count.set_ylabel('Number of samples')
     plt.savefig('sample_size_amenities.png')
@@ -264,7 +265,7 @@ def additional_parameters():
     filter_df = new_df[new_df['amenities'].isin(filter_counts)]
     min_amenities = filter_df.groupby('amenities')['review_scores_rating'].mean()
     
-    plt.figure()
+    plt.figure(figsize=(1400/96, 787/96), dpi=96)
     ax_amen = min_amenities.plot(title = 'Influence of amenities on review_score_rating')
     ax_amen.set_ylabel('average review_score_rating')
     ax_amen.set_xlabel('number of amenities')
