@@ -3,8 +3,8 @@
 An open AirBnB dataset from Kaggle is used to analyze data with respect to the following questions:
 
 1.  When is the most financially beneficial time to offer your apartment to a guest ?
-2.  What are some important AirBnB - host parameters you should set up in your host account and do they have an impact on the overall review score ?
-3.  Are there other important parameters that influence your review score ? In this example i analyzed the neighborhood your apartment is loacted and the number of amenities that come with your apartment. Do people care about neighborhood or the amenities they have during their stay ?
+2.  What are some important Airbnb host parameters you should set up in your host account and do they have an impact on the overall review score ?
+3.  Are there other important parameters that influence your review score ? In this example I analyzed the neighbourhood where your apartment is located at and the number of amenities that come with your apartment. Do people care about neighborhood or the amenities they have during their stay ?
 
 
 ## Installations
@@ -19,7 +19,7 @@ Packages used:
  - matplotlib
  - seaborn
  
- Dataset used from: [Kaggle - Seattlle Airbnb Open Data](https://www.kaggle.com/airbnb/seattle/data)
+ Dataset used from: [Kaggle - Seattle Airbnb Open Data](https://www.kaggle.com/airbnb/seattle/data)
 
 ## Project Motivation
 
