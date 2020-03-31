@@ -28,7 +28,7 @@ The motivation of the project is to find parameters, which you can influence as 
 
 ## Key Results
 
-Results based on this jupyter notebook [Kaggle - Seattle Airbnb Notebook(https://github.com/LtdDan82/Airbnb_seattle/blob/master/jupyter_airbnb.ipynb)
+Results based on this jupyter notebook [Notebook](https://github.com/LtdDan82/Airbnb_seattle/blob/master/jupyter_airbnb.ipynb)
 
 Key finding were:
 - most beneficial time to offer your apartment is during summer
