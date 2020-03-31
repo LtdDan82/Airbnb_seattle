@@ -21,11 +21,15 @@ Packages used:
  
  Dataset used from: [Kaggle - Seattle Airbnb Open Data](https://www.kaggle.com/airbnb/seattle/data)
 
+
 ## Project Motivation
 
 The motivation of the project is to find parameters, which you can influence as a host to optimize your review score and to maximize your financial return, when offering an accomodation on Airbnb in Seattle.
 
 ## Key Results
+
+Results based on this jupyter notebook [Kaggle - Seattle Airbnb Notebook(https://github.com/LtdDan82/Airbnb_seattle/blob/master/jupyter_airbnb.ipynb)
+
 Key finding were:
 - most beneficial time to offer your apartment is during summer
 - the number of amenities you have in your apartment increases your average rating score
